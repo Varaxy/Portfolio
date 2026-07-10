@@ -1,245 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Varaxy Thavereak - Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Varaxy Thavereak — Full-Stack Software Engineer</title>
+<meta name="description" content="Varaxy Thavereak — full-stack software engineer and NSF S-STEM Scholar building workforce tools, data pipelines, and AI-powered applications.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav>
-    <a href="#hero" class="nav-logo">VT</a>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">VT<span>_</span></a>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Menu">MENU</button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-  <!-- HERO -->
-  <section id="hero">
-    <div class="container" style="width:100%">
-      <div class="hero-wrap">
-        <div class="cm cm-tl"></div>
-        <div class="cm cm-tr"></div>
-        <div class="cm cm-bl"></div>
-        <div class="cm cm-br"></div>
-        <span class="coord coord-tl">37.5630° N, 120.9876° W</span>
-        <span class="coord coord-br">CSU Stanislaus - 2026</span>
+<main>
 
-        <p class="hero-tag">// Portfolio - Full-Stack Developer</p>
-        <h1 class="hero-name">
-          Varaxy<br><span class="hl">Thavereak</span>
-        </h1>
-        <p class="hero-role">Systems Thinker &amp; Software Developer</p>
-        <p class="hero-desc">
-          I build practical software for real operational problems - scheduling engines,
-          workforce management tools, and data-driven applications that actually get used.
+<!-- ================= HERO ================= -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-meta">
+      <span><span class="on">●</span> OPEN TO WORK</span>
+      <span>MODESTO, CA</span>
+      <span>B.S. COMPUTER SCIENCE — 2026</span>
+      <span>NSF S-STEM SCHOLAR</span>
+    </div>
+    <h1 class="hero-name">
+      <span class="word">VARAXY</span>
+      <span class="hero-line2 accent-line"><span class="word">THAVEREAK</span></span>
+    </h1>
+    <p class="hero-role"><span class="dot"></span><span id="role-swap">Full-Stack Software Engineer</span></p>
+    <p class="hero-desc">
+      I design, build, and deploy full-stack applications end to end — workforce tools,
+      data pipelines, and AI-powered apps that solve real operational problems.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn">View projects</a>
+      <a href="https://github.com/Varaxy" target="_blank" rel="noopener" class="textlink">GitHub ↗</a>
+      <a href="#contact" class="textlink">Contact</a>
+    </div>
+  </div>
+  <div class="hero-bottom">
+    <span>SCROLL ▾</span>
+    <span>PORTFOLIO — 2026</span>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="container">
+    <p class="label reveal"><span class="idx">01</span> ABOUT</p>
+    <h2 class="reveal">From the shop floor to the stack.</h2>
+    <div class="about-grid">
+      <div class="about-copy reveal d1">
+        <p>I'm a computer science graduate from <strong>CSU Stanislaus</strong> (May 2026) and an <strong>NSF S-STEM Scholarship recipient</strong>. I came to software from the operations side — I currently lead daily store operations as a Head Clerk, and years in grocery gave me a firsthand view of where tools fail the people who rely on them.</p>
+        <p>That experience shapes how I build: I think in <strong>systems</strong>, care about edge cases, and always ask <em>who actually uses this?</em> It's why my projects are workforce dashboards, attendance registries, and shift predictors — software for problems I've lived.</p>
+        <p>I've shipped a production app with a PostgreSQL backend, row-level security, and offline support, and I'm targeting <strong>full-stack and AI-powered application development</strong> roles.</p>
+      </div>
+      <div class="facts reveal d2">
+        <div class="fact"><span class="k">Based in</span><span class="v">Modesto, CA</span></div>
+        <div class="fact"><span class="k">Education</span><span class="v">B.S. Computer Science<span class="sub">CSU Stanislaus — May 2026</span></span></div>
+        <div class="fact"><span class="k">Honors</span><span class="v">NSF S-STEM Scholar</span></div>
+        <div class="fact"><span class="k">Currently</span><span class="v">Head Clerk<span class="sub">Cost Less Food Co.</span></span></div>
+        <div class="fact"><span class="k">Focus</span><span class="v">Full-stack · Data · AI apps</span></div>
+        <div class="fact"><span class="k">Status</span><span class="v">Open to opportunities</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <div class="container">
+    <p class="label reveal"><span class="idx">02</span> SELECTED WORK</p>
+    <h2 class="reveal">Projects.</h2>
+    <div class="proj-list">
+
+      <a class="proj-row reveal" href="https://github.com/Varaxy/shiftboard" target="_blank" rel="noopener">
+        <span class="proj-idx">001</span>
+        <div class="proj-main">
+          <h3>ShiftBoard</h3>
+          <p class="pdesc">Full-stack workforce analytics dashboard — Next.js App Router with a Supabase Postgres backend secured by row-level security. Auth, protected routes, server actions, and SQL views feeding KPIs, trends, and a model-scored risk table. Deployed on Vercel.</p>
+          <div class="ptags"><span>Next.js</span><span>TypeScript</span><span>Tailwind</span><span>Supabase</span><span>Vercel</span></div>
+        </div>
+        <span class="proj-arrow">↗</span>
+      </a>
+
+      <a class="proj-row reveal" href="https://github.com/Varaxy/calloff-registry" target="_blank" rel="noopener">
+        <span class="proj-idx">002</span>
+        <div class="proj-main">
+          <h3>Call-Off Registry</h3>
+          <p class="pdesc">Attendance-tracking app live in production — frontend UI to PostgreSQL data layer with row-level security and CI/CD. Secure auth, audit logging, cloud image storage, and PWA offline support.</p>
+          <div class="ptags"><span>Vite</span><span>Supabase</span><span>PostgreSQL</span><span>PWA</span><span>CI/CD</span></div>
+        </div>
+        <span class="proj-arrow">↗</span>
+      </a>
+
+      <a class="proj-row reveal" href="https://github.com/Varaxy" target="_blank" rel="noopener">
+        <span class="proj-idx">003</span>
+        <div class="proj-main">
+          <h3>Call-Off Predictor</h3>
+          <p class="pdesc">Machine-learning service that predicts employee call-offs — scikit-learn model served through a FastAPI endpoint, evaluated with real metrics (ROC-AUC 0.68) instead of toy accuracy.</p>
+          <div class="ptags"><span>scikit-learn</span><span>FastAPI</span><span>Python</span><span>ML</span></div>
+        </div>
+        <span class="proj-arrow">↗</span>
+      </a>
+
+      <a class="proj-row reveal" href="https://github.com/Varaxy" target="_blank" rel="noopener">
+        <span class="proj-idx">004</span>
+        <div class="proj-main">
+          <h3>Workforce Data Pipeline</h3>
+          <p class="pdesc">Analytics-engineering pipeline transforming raw workforce data into a star schema — dbt models orchestrated with Airflow over DuckDB, with 17/17 passing data tests.</p>
+          <div class="ptags"><span>dbt</span><span>Airflow</span><span>DuckDB</span><span>SQL</span></div>
+        </div>
+        <span class="proj-arrow">↗</span>
+      </a>
+
+      <a class="proj-row reveal" href="https://github.com/Varaxy/ShiftScheduler" target="_blank" rel="noopener">
+        <span class="proj-idx">005</span>
+        <div class="proj-main">
+          <h3>Shift Scheduler</h3>
+          <p class="pdesc">Scheduling platform for small teams — manager dashboard, employee PIN portal, swap and time-off workflows with automatic side effects, weekly-hours analytics.</p>
+          <div class="ptags"><span>FastAPI</span><span>MongoDB</span><span>Python</span><span>REST</span></div>
+        </div>
+        <span class="proj-arrow">↗</span>
+      </a>
+
+      <a class="proj-row reveal" href="https://github.com/Varaxy/news-aggregator" target="_blank" rel="noopener">
+        <span class="proj-idx">006</span>
+        <div class="proj-main">
+          <h3>News Aggregator</h3>
+          <p class="pdesc">Dockerized aggregation service that pulls from multiple sources and surfaces content worth reading — fast to load, easy to skim, built to extend.</p>
+          <div class="ptags"><span>Python</span><span>Docker</span><span>APIs</span></div>
+        </div>
+        <span class="proj-arrow">↗</span>
+      </a>
+
+    </div>
+    <p class="proj-note">MORE ON <a href="https://github.com/Varaxy" target="_blank" rel="noopener">GITHUB ↗</a></p>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+  <div class="container">
+    <p class="label reveal"><span class="idx">03</span> CAPABILITIES</p>
+    <h2 class="reveal">Skills.</h2>
+    <div class="skills-grid reveal d1">
+      <div class="skill-cell"><h4>Frontend</h4><p>React · Next.js · TypeScript<br>Tailwind CSS · Vite · PWA</p></div>
+      <div class="skill-cell"><h4>Backend &amp; APIs</h4><p>Node.js · Express · FastAPI<br>Flask · Django · Auth · REST</p></div>
+      <div class="skill-cell"><h4>Databases</h4><p>PostgreSQL · MySQL · MongoDB<br>Redis · Supabase · Firebase</p></div>
+      <div class="skill-cell"><h4>Data &amp; AI</h4><p>scikit-learn · pandas · dbt<br>Airflow · DuckDB · PyTorch</p></div>
+      <div class="skill-cell"><h4>DevOps</h4><p>Docker · AWS · CI/CD<br>Git · Linux · Vercel</p></div>
+      <div class="skill-cell"><h4>Languages</h4><p>JavaScript · TypeScript · Python<br>Java · SQL · HTML/CSS</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience">
+  <div class="container">
+    <p class="label reveal"><span class="idx">04</span> PATH</p>
+    <h2 class="reveal">Experience &amp; education.</h2>
+    <div class="xp-list">
+      <div class="xp-row reveal">
+        <span class="xp-when">JUN 2025 — PRESENT</span>
+        <div class="xp-body">
+          <h3>Head Clerk</h3>
+          <p class="xp-org">Cost Less Food Company — Modesto, CA</p>
+          <p>Lead daily store operations and supervise associates. Train new hires on point-of-sale and inventory systems, maintain inventory accuracy across departments, and resolve customer escalations.</p>
+        </div>
+      </div>
+      <div class="xp-row reveal">
+        <span class="xp-when">FEB 2024 — DEC 2024</span>
+        <div class="xp-body">
+          <h3>Research Intern</h3>
+          <p class="xp-org">CSU Stanislaus — Turlock, CA</p>
+          <p>Data cleaning, correlation analysis, and visualization on multi-year datasets using Python (pandas, Matplotlib, Seaborn), R, and Excel. Presented findings at university research celebrations and reverse career fairs.</p>
+        </div>
+      </div>
+      <div class="xp-row reveal">
+        <span class="xp-when">AUG 2022 — DEC 2023</span>
+        <div class="xp-body">
+          <h3>Computer Lab Student Assistant</h3>
+          <p class="xp-org">CSU Stanislaus — Turlock, CA</p>
+          <p>Front-line technical support for students and faculty — troubleshooting software, hardware, and network issues to minimize downtime.</p>
+        </div>
+      </div>
+      <div class="xp-row reveal">
+        <span class="xp-when">MAY 2026</span>
+        <div class="xp-body">
+          <h3>B.S. Computer Science</h3>
+          <p class="xp-org">California State University, Stanislaus — NSF S-STEM Scholar</p>
+          <p>Coursework: data structures &amp; algorithms, software engineering, data visualization, cybersecurity fundamentals, neural networks, computer organization. Certifications: Getting Started with Deep Learning (NVIDIA, 2025).</p>
+        </div>
+      </div>
+    </div>
+    <div class="stats-strip">
+      <div class="stat reveal"><div class="num"><span data-count="10">0</span><span class="plus">+</span></div><div class="lbl">Projects built</div></div>
+      <div class="stat reveal d1"><div class="num"><span data-count="6">0</span><span class="plus">+</span></div><div class="lbl">Languages</div></div>
+      <div class="stat reveal d2"><div class="num"><span data-count="3">0</span><span class="plus">+</span></div><div class="lbl">Years working</div></div>
+      <div class="stat reveal d3"><div class="num"><span data-count="2026">0</span></div><div class="lbl">B.S. earned</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="container">
+    <p class="label reveal"><span class="idx">05</span> CONTACT</p>
+    <h2 class="reveal">Let's build something real.</h2>
+    <div class="contact-grid">
+      <div class="reveal d1">
+        <p class="contact-lead">
+          Open to full-stack and AI-powered app development roles. I work best on teams
+          that care about real product impact and tools people actually rely on.
         </p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="https://github.com/Varaxy" target="_blank" rel="noopener" class="btn btn-ghost">GitHub &rarr;</a>
-        </div>
-
-        <!-- Decorative rings -->
-        <div class="hero-rings">
-          <svg viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="240" cy="240" r="238" stroke="rgba(74,158,255,0.18)" stroke-width="1"/>
-            <circle cx="240" cy="240" r="190" stroke="rgba(74,158,255,0.12)" stroke-width="1" stroke-dasharray="6 8"/>
-            <circle cx="240" cy="240" r="140" stroke="rgba(74,158,255,0.08)" stroke-width="1"/>
-            <circle cx="240" cy="240" r="80"  stroke="rgba(74,158,255,0.06)" stroke-width="1" stroke-dasharray="3 5"/>
-            <line x1="240" y1="2"   x2="240" y2="478" stroke="rgba(74,158,255,0.07)" stroke-width="1"/>
-            <line x1="2"   y1="240" x2="478" y2="240" stroke="rgba(74,158,255,0.07)" stroke-width="1"/>
-            <circle cx="240" cy="2"   r="2.5" fill="rgba(74,158,255,0.5)"/>
-            <circle cx="240" cy="478" r="2.5" fill="rgba(74,158,255,0.5)"/>
-            <circle cx="2"   cy="240" r="2.5" fill="rgba(74,158,255,0.5)"/>
-            <circle cx="478" cy="240" r="2.5" fill="rgba(74,158,255,0.5)"/>
-            <circle cx="240" cy="240" r="4"  fill="rgba(74,158,255,0.6)"/>
-            <circle cx="240" cy="240" r="12" stroke="rgba(74,158,255,0.35)" stroke-width="1"/>
-          </svg>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="container">
-      <p class="sec-label reveal">// 01 - About</p>
-      <h2 class="sec-title reveal">Background</h2>
-      <div class="about-grid">
-        <div class="about-text reveal">
-          <p>
-            CS student at <span class="hl">CSU Stanislaus</span>, graduating 2026.
-            I came to software from the operations side - years managing a grocery department
-            gave me a firsthand view of where tools fail workers and managers alike.
-          </p>
-          <p>
-            That experience shapes how I build: I think in <span class="hl">systems</span>,
-            care about edge cases, and always ask <em>who actually uses this?</em>
-          </p>
-          <p>
-            Currently targeting <span class="hl">AI-powered app development</span> roles
-            where I can combine full-stack skills with LLM integration to solve real business problems.
-          </p>
-          <p style="margin-top:1.5rem">
-            <a href="https://github.com/Varaxy" target="_blank" rel="noopener" class="btn btn-ghost">
-              github.com/Varaxy &rarr;
-            </a>
-          </p>
-        </div>
-
-        <div class="reveal delay-2">
-          <p class="skills-label">// Tech Stack</p>
-          <div class="skills-grid">
-            <div class="sk">JavaScript</div>
-            <div class="sk">TypeScript</div>
-            <div class="sk">React</div>
-            <div class="sk">Vite</div>
-            <div class="sk">Supabase</div>
-            <div class="sk">PostgreSQL</div>
-            <div class="sk">Python</div>
-            <div class="sk">C</div>
-            <div class="sk">HTML / CSS</div>
-            <div class="sk">Git</div>
-            <div class="sk">Node.js</div>
-            <div class="sk">REST APIs</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <div class="container">
-      <p class="sec-label reveal">// 02 - Projects</p>
-      <h2 class="sec-title reveal">Selected Work</h2>
-      <div class="project-list reveal">
-
-        <div class="project-item">
-          <div class="project-bg-num">01</div>
-          <div class="project-header">
-            <span class="project-num">Project 01</span>
-            <h3 class="project-name">Call-Off Registry</h3>
-          </div>
-          <p class="project-desc">
-            A full-stack employee absence and time-off management system built for real workplace use.
-            Features authentication, employee profiles with signed-URL photo uploads, time-off request
-            workflows, audit logging, and inactivity timeout - built with modular vanilla JS
-            across eight focused modules.
-          </p>
-          <div class="tags">
-            <span class="tag">Vite</span>
-            <span class="tag">Supabase</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">Vanilla JS</span>
-            <span class="tag">Auth</span>
-            <span class="tag">Storage</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Varaxy/calloff-registry" target="_blank" rel="noopener">GitHub &nearr;</a>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-bg-num">02</div>
-          <div class="project-header">
-            <span class="project-num">Project 02</span>
-            <h3 class="project-name">Shift Scheduler</h3>
-          </div>
-          <p class="project-desc">
-            A constraint-satisfaction scheduling engine for full grocery store operations.
-            Handles multi-department coverage, California minor and student labor law compliance,
-            mixed fixed/flexible shift models, and fairness scoring across an entire store roster -
-            rebuilt from scratch with a clean TypeScript engine-first architecture.
-          </p>
-          <div class="tags">
-            <span class="tag">React</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">Vite</span>
-            <span class="tag">Supabase</span>
-            <span class="tag">Algorithms</span>
-            <span class="tag">Vercel</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Varaxy" target="_blank" rel="noopener">GitHub &nearr;</a>
-          </div>
-        </div>
-
-        <div class="project-item">
-          <div class="project-bg-num">03</div>
-          <div class="project-header">
-            <span class="project-num">Project 03</span>
-            <h3 class="project-name">News Aggregator</h3>
-          </div>
-          <p class="project-desc">
-            A news aggregation application that pulls from multiple sources and surfaces content
-            worth reading. Built as a practical personal tool with a clean, lightweight interface -
-            fast to load, easy to skim, easy to extend.
-          </p>
-          <div class="tags">
-            <span class="tag">JavaScript</span>
-            <span class="tag">APIs</span>
-            <span class="tag">Web</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/Varaxy/news-aggregator" target="_blank" rel="noopener">GitHub &nearr;</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="container">
-      <p class="sec-label reveal">// 03 - Contact</p>
-      <div class="contact-grid">
-        <div class="reveal">
-          <h2 class="sec-title" style="margin-bottom:1rem">
-            Let&rsquo;s Build<br>Something.
-          </h2>
-          <p class="contact-cta">
-            Open to full-stack and AI-powered app development roles.
-            I work best on teams that care about real product impact
-            and building tools people actually rely on.
-          </p>
-        </div>
-        <div class="contact-items reveal delay-2">
-          <a href="https://github.com/Varaxy" target="_blank" rel="noopener" class="contact-item">
-            <div>
-              <span class="contact-type">GitHub</span>
-              github.com/Varaxy
-            </div>
+        <div class="contact-links">
+          <a class="c-row" href="mailto:thavereakvaraxy@gmail.com">
+            <span class="c-k">Email</span><span class="c-v">thavereakvaraxy@gmail.com</span><span class="c-arrow">↗</span>
           </a>
-          <a href="mailto:raxysteve@email.com" class="contact-item">
-            <div>
-              <span class="contact-type">Email</span>
-              raxysteve@email.com
-            </div>
+          <a class="c-row" href="https://github.com/Varaxy" target="_blank" rel="noopener">
+            <span class="c-k">GitHub</span><span class="c-v">github.com/Varaxy</span><span class="c-arrow">↗</span>
           </a>
-          <a href="https://linkedin.com/in/varaxy-thavereak" target="_blank" rel="noopener" class="contact-item">
-            <div>
-              <span class="contact-type">LinkedIn</span>
-              linkedin.com/in/varaxy-thavereak
-            </div>
+          <a class="c-row" href="https://linkedin.com/in/varaxy-thavereak" target="_blank" rel="noopener">
+            <span class="c-k">LinkedIn</span><span class="c-v">varaxy-thavereak</span><span class="c-arrow">↗</span>
           </a>
         </div>
       </div>
+      <form class="contact-form reveal d2" id="cform">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" rows="5" placeholder="What are we building?" required></textarea>
+        <button type="submit" class="btn">Send message</button>
+      </form>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
-    <span class="ft">&copy; 2026 Varaxy Thavereak</span>
-  </footer>
+</main>
 
-  <script src="js/main.js"></script>
+<footer>
+  <span class="sig">VARAXY THAVEREAK</span>
+  <span>© 2026 — DESIGNED &amp; BUILT BY HAND</span>
+  <a href="#hero">BACK TO TOP ↑</a>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>
