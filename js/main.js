@@ -1,4 +1,4 @@
-/* Varaxy Thavereak — portfolio interactions */
+/* Varaxy Thavereak portfolio interactions */
 (function () {
   "use strict";
   const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -43,7 +43,7 @@
   /* ---------- rotating role (crossfade) ---------- */
   const roles = [
     "Full-Stack Software Engineer",
-    "B.S. Computer Science — 2026",
+    "B.S. Computer Science, 2026",
     "NSF S-STEM Scholar",
     "Systems Thinker",
   ];
@@ -86,7 +86,7 @@
     const f = e.target;
     const subject = encodeURIComponent("Portfolio contact from " + f.name.value);
     const body = encodeURIComponent(
-      f.message.value + "\n\n— " + f.name.value + " (" + f.email.value + ")"
+      f.message.value + "\n\n" + f.name.value + " (" + f.email.value + ")"
     );
     location.href = "mailto:thavereakvaraxy@gmail.com?subject=" + subject + "&body=" + body;
   });

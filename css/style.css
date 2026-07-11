@@ -1,5 +1,5 @@
 /* ============================================================
-   Varaxy Thavereak — Portfolio
+   Varaxy Thavereak - Portfolio
    Quiet editorial dark. One accent. Type does the talking.
    ============================================================ */
 
@@ -116,7 +116,7 @@ nav.scrolled{
 .hero-name{
   font-family:var(--font-d);font-weight:700;letter-spacing:-.03em;
   font-size:clamp(2.6rem,9.5vw,7rem);
-  line-height:1.04;               /* room for glyphs — nothing clips */
+  line-height:1.04;               /* room for glyphs - nothing clips */
   margin-bottom:2rem;
   overflow:visible;               /* fix: name was being cut off */
 }
